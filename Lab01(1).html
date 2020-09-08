@@ -1,0 +1,36 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+	<canvas width="1000" height="1000" id="lab01" >
+	</canvas>
+
+
+	<script>
+
+		var canvas = document.getElementById("lab01");
+		var ctx = canvas.getContext("2d");
+
+		var x=0;
+		setInterval(function(){
+
+		ctx.clearRect(0,0,canvas.width,canvas.height);
+
+		ctx.fillStyle = 'blue';	
+		ctx.fillRect(550+Math.cos(x)*100,150+Math.sin(x)*100, 50, 70);
+
+			x+=0.1;
+
+		}, 25);
+
+
+
+	</script>
+
+
+</body>
+
+</html>

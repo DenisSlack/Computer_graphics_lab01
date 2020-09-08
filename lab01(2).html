@@ -1,0 +1,56 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+	<canvas width="1000" height="1000" id="lab01" >
+	</canvas>
+
+
+	<script>
+
+		var canvas = document.getElementById("lab01");
+		var ctx = canvas.getContext("2d");
+
+		ctx.fillStyle = 'blue';
+
+		for (let i = 0; i<=60; i+=1){
+			ctx.fillRect( 40+i/2, 80-i, 4, 4)
+		}
+
+
+		for (let i = 0; i<=60; i+=1){
+			ctx.fillRect( 70+i/2, 20+i, 4, 4)
+		}
+
+		for (let i = 0; i<80; i+=1){
+			ctx.fillRect(30+i, 45, 4, 4)
+		}
+
+		for (let i = 0; i<80; i+=1){
+			ctx.fillRect(30+i, 45, 4, 4)
+		}
+
+		for (let i = 0; i<35; i+=1){
+			ctx.fillRect( 40+i*2, 80-i , 4, 4)
+		}
+
+		for (let i = 0; i<35; i+=1){
+			ctx.fillRect( 100-i*2, 80-i , 4, 4)
+		}
+
+
+
+		
+
+		
+
+
+	</script>
+
+
+</body>
+
+</html>
